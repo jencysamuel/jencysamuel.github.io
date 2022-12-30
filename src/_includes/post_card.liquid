@@ -7,7 +7,7 @@
 		</div>
 		<p class="line-clamp-3">{{post.description|default: 'Read more&hellip;'}}</p>
 	</div>
-	<img src="{{-post.img.uri | url-}}" alt="{{-post.img.alt-}}"
+	<img src="{{-post.img.uri | url-}}" alt="{{-post.img.alt-}}" loading="lazy"
 	    class="w-full h-full rounded-t-md aspect-video bg-slate-200
 		   object-cover object-top
 		   order-first">
