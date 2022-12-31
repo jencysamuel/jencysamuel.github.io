@@ -15,6 +15,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("asset");
   eleventyConfig.addPassthroughCopy("favicon.ico");
+  if (process.env.NODE_ENV === "production"){
+	  eleventyConfig.ignores.add("src/test.md")
+  }
 
   return {
     pathPrefix: process.env.ELEVENTY_pathPrefix ?? '',
