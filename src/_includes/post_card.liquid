@@ -12,7 +12,9 @@
 		<p class="line-clamp-3 self-start">{{post.description|default: 'Read more&hellip;'}}</p>
 	</div>
 	<img src="{{-post.img.uri | url-}}" alt="{{-post.img.alt-}}" loading="lazy"
-	    class="w-full h-full rounded-t-md aspect-video bg-slate-200
-		   object-cover object-top
-		   order-first">
+	     class="w-full h-full object-cover object-top order-first aspect-video bg-slate-200
+		    rounded-t-md
+		    md:rounded-none md:rounded-l-md
+		    lg:rounded-none lg:rounded-t-md
+		   ">
 </article>
