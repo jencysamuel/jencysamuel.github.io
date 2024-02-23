@@ -21,10 +21,15 @@ layout: 'base.liquid'
 		   lg:gap-16
 		   lg:grid-cols-3
 		   ">
-		{%assign latest_nine_posts = posts | sort: 'date' | reverse | slice: 0, 9%}
+		{%assign latest_nine_posts = posts | where: "hide", nil | sort: 'date' | reverse | slice: 0, 9%}
 		{%-for post in latest_nine_posts-%}
+			{%-assign uri_first = post.uri | slice: 0-%}
 			<li>
-				<a href="{{-post.uri-}}" target="_blank" rel="noreferrer">
+				{%-if uri_first == "." or uri_first == "/"-%}
+					<a href="{{-post.uri-}}">
+				{%-else-%}
+					<a href="{{-post.uri-}}" target="_blank" rel="noreferrer">
+				{%-endif-%}
 				{%-render 'post_card.liquid', post: post-%}
 				</a>
 			</li>
