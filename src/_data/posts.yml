@@ -24,6 +24,8 @@
   publisher: 'Village Square'
 
 - id: '51a5317'
+  hide:
+    home: true
   title: South Indian birdwatchers discover new songbird in Arunachal Pradesh
   uri: 'https://thesouthfirst.com/featured/south-indian-birdwatchers-discover-new-songbird-in-arunachal-pradesh/'
   date: '2022-12-19'
@@ -108,3 +110,14 @@
     alt: 'boats docked at a pier'
   publisher: Mongaybay India
 
+
+- id: 0a0c5059de05e1ad3abe523295d5821268840286
+  title: "Heat Waves and Action Plans: How does India Fare?"
+  uri: /2023/07/terragreen-heatwaveaction/
+  date: '2023-07-15'
+  description: >
+    article
+  img:
+    uri: https://unsplash.it/100/100
+    alt: 'image'
+  publisher: TerraGreen
