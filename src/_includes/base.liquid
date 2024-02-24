@@ -2,7 +2,9 @@
 <html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		{%-if site.description-%}
+		{%-if description-%}
+		<meta name="description" content="{{description}}">
+		{%-elsif site.description-%}
 		<meta name="description" content="{{site.description}}">
 		{%-endif-%}
 		<title>
@@ -19,9 +21,8 @@
 	</head>
 	<body class="min-h-screen bg-slate-200
 		     grid gap-4 md:gap-16 mt-4 md:mt-16 mb-2 md:mb-4
-		     items-center
 		     grid-rows-[max-content_auto_min-content]">
-		<header class="px-4 md:px-16 grid grid-flow-col auto-cols-fr items-center">
+		<header class="self-center px-4 md:px-16 grid grid-flow-col auto-cols-fr items-center">
 			<h1 class="text-theme-500 text-4xl lg:text-7xl small-caps"><a href="{{ '/' | url }}">{{-site.name-}}</a></h1>
 			<section class="text-sm text-right text-neutral-700
 					grid place-content-end items-center
@@ -35,10 +36,8 @@
 			</section>
 		</header>
 
-		{%comment%}dummy container to maintain grid's three rows{%endcomment%}
-		<div class="mx-4 md:mx-16">
+		{%comment%}Tailwind sets mx for <main> at layer @base{%endcomment%}
 		{{-content-}}
-		</div>
 
 		<footer class="text-center text-sm text-slate-800
 			       grid place-content-center">

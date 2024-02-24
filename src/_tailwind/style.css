@@ -3,3 +3,9 @@
 @layer utilities {
 	.small-caps { font-variant: small-caps; }
 }
+@layer base {
+	main {
+		@apply md:mx-16;
+		@apply mx-4;
+	}
+}
