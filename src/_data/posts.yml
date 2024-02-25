@@ -118,6 +118,6 @@
   description: >
     This piece was published in the July 2023 issue of the print magazine <a class="underline text-theme-500" target="_blank" rel="noreferrer" href="https://terragreen.teriin.org/">Terragreen</a>.
   img:
-    uri: https://unsplash.it/100/100
-    alt: 'image'
+    uri: asset/post-img/0a0c5059de05e1ad3abe523295d5821268840286.jpg
+    alt: 'people using shawls and umbrellas to protect from heat'
   publisher: TerraGreen
