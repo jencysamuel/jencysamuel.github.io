@@ -1,17 +1,23 @@
 <!DOCTYPE html>
+{%if id%}
+	{%assign post = posts | where: "id", id | first%}
+{%endif%}
 <html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		{%-if description-%}
-		<meta name="description" content="{{description}}">
+
+		{%-if post.description-%}
+		<meta name="description" content="{{post.description | strip_html}}">
 		{%-elsif site.description-%}
-		<meta name="description" content="{{site.description}}">
+		<meta name="description" content="{{site.description | strip_html}}">
 		{%-endif-%}
+
 		{%-if preload-%}
 			{%for l in preload%}
 				<link rel="preload" href="{{l}}" />
 		   {%endfor%}
 	   {%-endif-%}
+
 		<title>
 			{%if title%}
 				{{-title-}}
@@ -22,6 +28,7 @@
 			{%endif%}
 
 		</title>
+
 		<link rel="stylesheet" href="{{- '/style.css' | url -}}">
 	</head>
 	<body class="min-h-screen bg-slate-200
@@ -48,7 +55,7 @@
 			       grid place-content-center">
 			<span>
 				&copy;&nbsp;
-				{{-site.author.name-}}&nbsp;2022
+				{{-site.author.name-}}&nbsp;2024
 			</span>
 		</footer>
 	</body>
