@@ -7,6 +7,11 @@
 		{%-elsif site.description-%}
 		<meta name="description" content="{{site.description}}">
 		{%-endif-%}
+		{%-if preload-%}
+			{%for l in preload%}
+				<link rel="preload" href="{{l}}" />
+		   {%endfor%}
+	   {%-endif-%}
 		<title>
 			{%if title%}
 				{{-title-}}
