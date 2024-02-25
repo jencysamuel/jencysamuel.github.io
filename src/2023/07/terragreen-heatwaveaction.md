@@ -7,6 +7,7 @@ preload:
 
 <iframe
 src="https://drive.google.com/file/d/1BlPbUXXwjtinI9cE929HJ6U939SLbigj/preview"
+class="container mx-auto w-full h-full"
 allow="autoplay"
 ></iframe>
 

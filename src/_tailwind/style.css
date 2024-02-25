@@ -5,7 +5,8 @@
 }
 @layer base {
 	main {
-		@apply md:mx-16;
 		@apply mx-4;
+		@apply md:container;
+		@apply md:mx-auto;
 	}
 }

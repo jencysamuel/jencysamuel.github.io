@@ -1,0 +1,20 @@
+---
+layout: base
+---
+
+{%-assign post = posts | where: "id", id | first-%}
+<main class="container mx-auto">
+<header class="p-4 space-y-1 bg-slate-300">
+	<h1 class="text-3xl text-theme-400 font-semibold">{{post.title}}</h1>
+	<div class="space-x-1 text-slate-800 text-semibold">
+	{%-render 'date-pub', date: post.date, publisher: post.publisher-%}
+	</div>
+</header>
+{%-if post.description-%}
+	<p class="text-slate-600 italic my-4"
+		>{{post.description}}<p>
+{%-endif-%}
+<article class="container h-screen">
+	{{content}}
+</article>
+</main>
