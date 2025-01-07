@@ -123,3 +123,29 @@
     uri: asset/post-img/0a0c5059de05e1ad3abe523295d5821268840286.jpg
     alt: 'people using shawls and umbrellas to protect from heat'
   publisher: TerraGreen
+
+- id: aeb7414
+  title: As Indian cities heat up, climate-resilient traditional buildings are coming into fashion
+  date: '2023-08-04'
+  uri: 2023/08/ecobusiness-climate-resilient-traditional-buildings
+  publisher: Eco-Business
+  description: >
+    Vernacular architecture, which uses locally-sourced natural materials and traditional
+    designs, could be key to climate resilience in India’s built environment as extreme
+    weather events become more common.
+  img:
+    uri: asset/post-img/aeb7414.jpg
+    alt: a cottage built using cob, a mixture of mud, sand, straw or lime being constructed in a hot place
+
+- id: b658fe8
+  title: India wants to use bio-CNG to manage farm waste and reduce fossil fuel imports
+  date: '2023-01-10'
+  uri: 2023/01/ecobusiness-biocng-managing-farmwaste
+  description: >
+    Compressed biogas, or bio-CNG, is likely to play a crucial role in India’s energy
+    transition. But entrepreneurs say the business environment is dispiriting and
+    approvals must be fast-tracked.
+  img:
+    uri: asset/post-img/b658fe8.jpg
+    alt: farmers working in a field with a bio CNG plant in the background
+  publisher: Eco-Business
