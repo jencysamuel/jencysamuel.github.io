@@ -13,6 +13,8 @@
 
 - id: '595724a'
   title: 'Where waste ‘lights up’ villages'
+  hide:
+    home: true
   uri: 'https://www.villagesquare.in/villages-in-tamil-nadu-generate-electricity-from-biogas-produced-with-waste/'
   date: '2022-12-16'
   description: >
@@ -100,6 +102,8 @@
   title: Tharuvaikulam’s palmyra climbers turn sustainable fishers
   uri: https://india.mongabay.com/2019/08/tharuvaikulams-palmyra-climbers-turn-sustainable-fishers/
   date: '2019-08-09'
+  hide:
+    home: true
   description: >
     A drought that saw palmyra trees wilting and the ban on toddy tapping in 1987
     made the people of Tharuvaikulam village in Thoothukudi district switch to fishing.
