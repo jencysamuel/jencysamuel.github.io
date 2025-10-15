@@ -18,7 +18,7 @@ layout: 'base.liquid'
 	<ul class="grid
 		   auto-cols-fr auto-rows-fr
 		   gap-4
-		   lg:gap-16
+		   lg:gap-8
 		   lg:grid-cols-3
 		   ">
 		{%assign latest_nine_posts = posts | where: "hide", nil | sort: 'date' | reverse | slice: 0, 9%}
