@@ -6,7 +6,10 @@ layout: 'base.liquid'
 <main class="
 	   grid gap-4 md:gap-16"
 	>
-	<section class="p-4 md:py-8 md:px-10 rounded bg-theme-300 flex flex-col-reverse lg:flex-row justify-between items-center space-y-4 lg:space-x-16">
+	<section class="p-4 md:py-8 md:px-10 rounded bg-theme-300 flex
+		flex-col-reverse lg:flex-row justify-between items-center space-y-4
+		lg:space-x-16">
+
 		<p class="lg:text-2xl">{{-site.bio | newline_to_br-}}</p>
 		<img src="{{ '/asset/cover.jpg' | url }}" alt="a smiling Jency with a few stray grays"
 							  class="rounded-full w-24 md:w-64 self-end lg:self-center"
@@ -21,7 +24,7 @@ layout: 'base.liquid'
 		   lg:gap-8
 		   lg:grid-cols-3
 		   ">
-		{%assign latest_nine_posts = posts | where: "hide", nil | sort: 'date' | reverse | slice: 0, 9%}
+		{%assign latest_nine_posts = posts | where: "hide", nil | sort: 'date' | reverse | slice: 0, 12%}
 		{%-for post in latest_nine_posts-%}
 			{%-assign uri_first = post.uri | slice: 0-%}
 			<li>
