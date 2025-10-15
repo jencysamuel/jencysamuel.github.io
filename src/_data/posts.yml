@@ -121,7 +121,7 @@
   date: '2023-07-15'
   description: >
     As climate-induced heat waves are on the rise, affecting
-    people's health and livelihood, and India's economoy, there's
+    people's health and livelihood, and India's economy, there's
     a need to implement heat action plans.
   img:
     uri: asset/post-img/0a0c5059de05e1ad3abe523295d5821268840286.jpg
@@ -153,3 +153,38 @@
     uri: asset/post-img/b658fe8.jpg
     alt: farmers working in a field with a bio CNG plant in the background
   publisher: Eco-Business
+
+- id: 1b7dc3d
+  title: தூக்கணாங்குருவி மின்மினிப் பூச்சியைப் பிடிக்குமா?
+  date: '2023-07-30'
+  uri: 2023/07/weavers-and-glow
+  description: >
+  img:
+    uri: ''
+  publisher: The Hindu Tamil
+
+- id: e83273b
+  title: Towards a green economy through green hydrogen
+  date: '2025-07-31'
+  uri: 2024/07/green-economy-through-green-hydrogen
+  description: >
+    Green hydrogen can be used to produce electricty, by combining it with oxygen
+    across an electrochemical cell. These hydrogen fuel cells are commonly used in
+    vehicles and microgrids. India plans to harness this potential as the transport
+    sector accounts for 14% of energy-related CO2 emissions.
+  img:
+    uri: ''
+  publisher: WINDPRO
+
+- id: 69f977d
+  title: Why the Bay of Bengal is more prone to cyclones than the Arabian Sea
+  date: '2025-01-07'
+  uri: https://thesouthfirst.com/tamilnadu/explained-why-the-bay-of-bengal-is-more-prone-to-cyclones-than-the-arabian-sea/
+  description: >
+    For every cyclone forming over the Arabian Sea, four cyclones develop over
+    Bay of Bengal.
+    But why does the east coast of India experience more cyclones compared to
+    the west coast?
+  img:
+    uri: 'asset/post-img/69f977d.webp'
+  publisher: The South First
