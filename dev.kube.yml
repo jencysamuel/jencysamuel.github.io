@@ -1,0 +1,46 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jencysamuel.com
+
+spec:
+  containers:
+    -
+      args:
+        - npm
+        - run
+        - dev
+      name: dev
+      image: "docker.io/node:alpine"
+      ports:
+        - containerPort: 3000
+          hostPort: 3000
+      workingDir: /src
+      volumeMounts:
+        - mountPath: /src
+          name: src
+        - mountPath: /src/node_modules
+          name: modules
+  initContainers:
+    -
+      args:
+        - npm
+        - clean-install
+      name: install-modules
+      image: "docker.io/node:alpine"
+      workingDir: /src
+      volumeMounts:
+        - mountPath: /src
+          name: src
+        - mountPath: /src/node_modules
+          name: modules
+
+  volumes:
+    - hostPath:
+        path: /home/kevins/Code/kevinnls/jencysamuel.github.io
+        type: Directory
+      name: src
+    - persistentVolumeClaim:
+        claimName: modules
+      name: modules
+
