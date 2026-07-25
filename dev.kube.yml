@@ -25,7 +25,7 @@ spec:
     -
       args:
         - npm
-        - clean-install
+        - install
       name: install-modules
       image: "docker.io/node:alpine"
       workingDir: /src
@@ -37,7 +37,7 @@ spec:
 
   volumes:
     - hostPath:
-        path: /home/kevins/Code/kevinnls/jencysamuel.github.io
+        path: /home/kevins/code/jencysamuel.github.io
         type: Directory
       name: src
     - persistentVolumeClaim:
